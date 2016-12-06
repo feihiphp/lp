@@ -1,0 +1,88 @@
+/* Code tidied up by ScrapBook */
+body, html { margin: 0px; padding: 0px; width: 100%; height: 100%; font-size: 100%; font-family: "微软雅黑","Arial","clean","sans-serif"; color: rgb(255, 255, 255); background: rgb(0, 0, 0) none repeat scroll 0% 0%; }
+a { color: rgb(117, 117, 117); text-decoration: none; }
+a:hover { color: rgb(153, 153, 153); }
+a img { border: 0px none; }
+img { width: 100%; vertical-align: middle; }
+ul { list-style-type: none; padding: 0px; margin: 0px; }
+input[type="text"] { font-family: "微软雅黑","Arial","clean","sans-serif"; margin: 0px; padding: 0px; box-shadow: none; }
+textarea[type="text"] { font-family: "微软雅黑","Arial","clean","sans-serif"; margin: 0px; padding: 0px; box-shadow: none; }
+.clearboth { clear: both; }
+.isTableCell { display: table-cell; vertical-align: middle; overflow: hidden; }
+.msgbox {  }
+.posabs { position: absolute; }
+.siteMain { height: 100%; width: 100%; position: absolute; }
+.cnzz_stat { display: none; }
+.musicBox { display: none; }
+.testLayer { position: fixed; left: 0%; top: 0px; z-index: 9999999; word-break: break-all; width: 30%; height: 15%; }
+.shareLayer { height: 100%; width: 100%; position: fixed; z-index: 1201; background: rgba(0, 0, 0, 0.9) none repeat scroll 0% 0%; display: none; }
+.shareLayer .p0 { width: 55%; position: absolute; right: 2%; top: 2%; }
+.shareLayer .p1 { width: 40%; position: absolute; right: 8%; top: 11%; letter-spacing: 2px; color: rgb(135, 136, 137); text-align: center; }
+.firstload { display: none; }
+.siteLoading { position: fixed; top: 0px; right: 0px; width: 100%; height: 100%; z-index: 999999; background: transparent linear-gradient(to bottom, rgb(27, 61, 120) 0%, rgb(26, 42, 89) 40%, rgb(17, 27, 57) 100%) repeat scroll 0% 0%; }
+.siteLoading > .bg { width: 100%; height: 100%; left: 0%; top: 0%; background: transparent url("star0.png") no-repeat scroll 0% 0%; opacity: 0.3; }
+.siteLoading .starline0 { width: 20%; left: 2%; top: 2%; display: none; }
+.siteLoading .starline1 { width: 10%; right: 2%; top: 50%; display: none; }
+.siteLoading .heart { width: 20%; left: 40%; top: 40%; }
+.siteLoading .heart .wrap { width: 100%; left: 0%; top: 0%; background: rgb(82, 82, 82) none repeat scroll 0% 0%; }
+.siteLoading .heart .h0 { z-index: 3; width: 120%; left: -10%; top: -13%; }
+.siteLoading .heart .h1 { left: -10%; bottom: 0%; width: 240%; height: 0%; }
+.siteLoading .heart .h1 .wrap1 { left: 0%; top: 0%; width: 100%; height: 100%; }
+.siteLoading .heart .h1 li { display: inline-block; white-space: nowrap; width: 50%; height: 100%; background: transparent url("loading_heart_wave.png") repeat scroll center top / 100% auto; z-index: 2; }
+.siteLoading .heart .star { width: 100%; height: 100%; top: 400%; }
+.siteLoading .heart .star li { position: absolute; width: 20%; left: 40%; opacity: 0; }
+.ajaxLoading { position: fixed; width: 100%; height: 100%; left: 0%; top: 0%; background: rgba(0, 0, 0, 0.8) url("ajaxLoading.gif") no-repeat scroll center center / 20% auto; z-index: 1001; display: none; }
+.btnStyle0 { background: transparent url("btn_bg0.png") no-repeat scroll 0% 0% / 100% 100%; display: inline-block; color: rgb(45, 25, 3); font-size: 5vw; font-weight: bold; margin: 0% 2% 3%; padding: 8px 24px; }
+.siteMain .msgbox { position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%; text-align: center; z-index: 200; display: none; }
+.siteMain .msgbox .wrap0 { left: 10%; top: 50%; width: 80%; margin-top: -35%; }
+.siteMain .msgbox .close { right: 7%; top: 5vw; width: 9%; }
+.siteMain .btnMusic { position: fixed; width: 6%; right: 1%; top: 1%; z-index: 999; }
+.siteMain .mainContent { height: 100%; overflow: hidden; }
+.siteIndex {  }
+.siteIndex .mainContent .wrap { position: relative; background: transparent url("index_bg.png") no-repeat scroll left top / 100% 100%; }
+.siteIndex .mainContent .bg { width: 100%; height: 100%; background: transparent url("index_star1.png") no-repeat scroll center bottom / 100% auto; opacity: 0.8; }
+.siteIndex .mainContent ul li { position: relative; z-index: 3; }
+.siteIndex .mainContent .sky0 { background: transparent url("star0.png") no-repeat  center bottom / 100% auto; }
+.siteIndex .mainContent .sky0 ul li { position: absolute; width: 30%; right: 0px; top: 0px; }
+.siteIndex .mainContent .sky2 .stars { width: 100%; height: 100%; left: 0%; top: 0%; background: transparent url("index_star0.png") no-repeat scroll center center / 90% auto; }
+.siteIndex .mainContent .sky2 .t0 { width: 62%; margin: 5% auto; }
+.siteIndex .mainContent .sky2 .t1 { width: 87%; margin: 5% auto; }
+.siteIndex .mainContent .sky2 .p0 { width: 33vh; margin: 5vh auto; position: relative; }
+.siteIndex .mainContent .sky2 .p0 .star { width: 81%; left: 13%; top: 9%; }
+.siteIndex .mainContent .sky2 .b0 { width: 16%; padding: 3% 2%; margin: 5% auto; position: relative; border: 2px solid rgb(168, 169, 178); border-radius: 50px; font-size: 80%; color: rgb(168, 169, 178); text-align: center; }
+.siteIndex .mainContent .sky2 .b0 .wave0 { width: 200%; left: -200%; top: 8%; }
+.siteIndex .mainContent .sky2 .b0 .wave1 { width: 200%; left: 100%; top: 8%; }
+.siteSelect { background: transparent linear-gradient(to bottom, rgb(27, 61, 120) 0%, rgb(26, 42, 89) 40%, rgb(17, 27, 57) 100%) repeat scroll 0% 0%; display: none; }
+.siteSelect .mainContent { position: relative; background: transparent url("index_star1.png") no-repeat scroll center bottom / 100% auto; }
+.siteSelect .mainContent .bg { width: 100%; height: 100%; background: transparent url("index_star0.png") no-repeat scroll center center / 90% auto; }
+.siteSelect .mainContent .stars { position: absolute; width: 24%; left: 38%; top: 40%; }
+.siteSelect .mainContent .stars li { position: absolute; width: 100%; left: 0%; top: 0%; }
+.siteSelect .mainContent .stars li .w { font-size: 90%; position: absolute; left: -25%; top: 20%; width: 150%; line-height: 300%; white-space: nowrap; border: 1px solid rgb(255, 255, 255); border-radius: 50px; text-align: center; display: none; }
+.siteSelect .mainContent .pos { position: absolute; left: 5%; top: 30%; }
+.siteSelect .mainContent .pos li { margin: 5vw 0px; opacity: 0.5; transform: rotate(45deg); }
+.siteSelect .mainContent .pos li.hit { border: 1px solid rgb(255, 255, 255); opacity: 1; }
+.siteSelect .mainContent .pos li div { width: 4px; height: 4px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; margin: 3px; border: 1px solid rgb(255, 255, 255); }
+.siteSelect .msgSelecctTips { display: block; }
+.siteSelect .msgSelecctTips .wrap { width: 50%; right: 5%; top: 40%; }
+.siteSelect .msgSelecctTips .wrap .p0 { width: 50%; margin: 15% auto; }
+.sitePageLoad { background: transparent linear-gradient(to bottom, rgb(27, 61, 120) 0%, rgb(26, 42, 89) 40%, rgb(17, 27, 57) 100%) repeat scroll 0% 0%; display: none; }
+.sitePageLoad .mainContent { position: relative; background: transparent url("index_star1.png") no-repeat scroll center bottom / 100% auto; }
+.sitePageLoad .mainContent .bg { width: 100%; height: 100%; background: transparent url("index_star0.png") no-repeat scroll center center / 90% auto; }
+.sitePageLoad .mainContent .w0 { width: 34%; margin: 3% auto; line-height: 300%; white-space: nowrap; border: 1px solid rgb(255, 255, 255); border-radius: 50px; text-align: center; font-size: 90%; }
+.sitePageLoad .mainContent .w1 { width: 100%; margin: 2% auto; text-align: center; }
+.sitePageLoad .mainContent .w2 { width: 100%; text-align: center; font-size: 80%; opacity: 0.2; }
+.siteWork { background: rgb(0, 0, 0) none repeat scroll 0% 0%; display: none; }
+.siteWork .arrow { left: 46%; bottom: 2%; width: 6%; position: fixed; }
+.siteWork .mainContent { position: relative; background: transparent url("index_star1.png") no-repeat scroll center bottom / 100% auto; }
+.siteWork .mainContent ul { width: 100%; background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%; }
+.siteWork .mainContent li { position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; }
+.siteWork .mainContent li .title { margin: 2% auto; opacity: 0.2; font-size: 80%; }
+.siteWork .mainContent li .t0 { padding-left: 4%; float: left; }
+.siteWork .mainContent li .t1 { padding-right: 4%; float: right; }
+.siteWork .mainContent li .word { clear: both; text-align: center; margin: 12vh auto; font-size: 90%; font-weight: 100; }
+.siteWork .msgShare { background: rgba(0, 0, 0, 0.85) none repeat scroll 0% 0%; display: none; }
+.siteWork .msgShare .wrap .bg { left: 0%; top: 0%; width: 100%; height: 100%; }
+.siteWork .msgShare .wrap .p0 { left: 27%; top: 50%; width: 46%; margin: -55% auto; z-index: 3; }
+.siteWork .msgShare .wrap .b { padding: 2% 4%; border: 2px solid rgb(168, 169, 178); border-radius: 50px; width: 20%; z-index: 3; font-size: 85%; color: rgb(168, 169, 178); text-align: center; }
+.siteWork .msgShare .wrap .b0 { left: 10%; bottom: 5%; }
+.siteWork .msgShare .wrap .b1 { right: 10%; bottom: 5%; }
